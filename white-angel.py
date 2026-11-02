@@ -1,14 +1,15 @@
 import os, threading
 def speak():
-    os.system('termux-tts-speak "White Angel, Defrit, Timika, Papua Tengah, Protected" &')
+    os.system('espeak "White Angel, Defrit, Timika, Papua Tengah Protected" -s 130 > /dev/null 2>&1')
 threading.Thread(target=speak).start()
 os.system("clear")
-print("\033[1;37m      .-'`'-.    .-'`'-.      ")
-print("   .-'        \\/        '-.   ")
-print(".-'   \\  WHITE ANGEL  /   '-.")
-print("\033[1;36m\\  \\   /  DEFRIT - TIMIKA  \\  \\   /\033[0m")
-print("\033[1;37m '-. \\  .'       '.  / .-'")
-print("    '-.'           '.-'\033[0m")
+print("          .")
+print("         // \\\\")
+print("        //   \\\\  WHITE ANGEL /")
+print("        \\\\   /  DEFRIT - TIMIKA \\\\  //")
+print("         \\_/_  _\\_//_")
+print("              \\/ \\/")
 os.system('figlet -f big "WHITE ANGEL" | lolcat')
 os.system('figlet -f small "DEFRIT - TIMIKA" | lolcat')
-print("\033[1;32m      [ PAPUA TENGAH - PROTECTED ]\033[0m\n")
+print("      [ PAPUA TENGAH - PROTECTED ]\n")
+0
